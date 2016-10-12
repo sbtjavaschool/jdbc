@@ -1,10 +1,11 @@
 package ru.sbt;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
 
 public class PersonDaoImpl implements PersonDao {
     private final Connection connection;
