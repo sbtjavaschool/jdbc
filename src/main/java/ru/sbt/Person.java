@@ -3,10 +3,12 @@ package ru.sbt;
 public class Person {
     private final long id;
     private final String name;
+    private final City city;
 
-    public Person(long id, String name) {
+    public Person(long id, String name, City city) {
         this.id = id;
         this.name = name;
+        this.city = city;
     }
 
     public long getId() {
@@ -15,6 +17,10 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+
+    public City getCity() {
+        return city;
     }
 
     @Override
