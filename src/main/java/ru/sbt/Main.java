@@ -14,9 +14,9 @@ public class Main {
             PersonDao personDao = new PersonDaoImpl(connection);
 
             City city = new City(890, "Moscow", 10_000_000);
-//            personDao.savePerson(new Person(10L, "Alex", city));
-//            personDao.savePerson(new Person(12L, "Alex", city));
-//            personDao.savePerson(new Person(15L, "Bob", city));
+//            personDao.savePerson(new Person(120L, "Alex", city));
+//            personDao.savePerson(new Person(122L, "Alex", city));
+//            personDao.savePerson(new Person(125L, "Bob", city));
 
             List<Person> persons = personDao.findByName("Alex");
 
